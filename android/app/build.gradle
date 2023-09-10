@@ -7,8 +7,7 @@ plugins {
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
 if (localPropertiesFile.exists()) {
-    localPropertiesFile.withReader('UTF-8') { reader ->
-        localProperties.load(reader)
+    localPropertiesFile.withReader('UTF-8') { reader -> localProperties.load(reader)
     }
 }
 
@@ -26,6 +25,29 @@ android {
     namespace "com.example.mr_white"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
+    flavorDimensions "flavor-type"
+
+    productFlavors {
+        //com.example.mr_white.dev
+        dev {
+            dimension "flavor-type"
+            applicationIdSuffix ".dev"
+            resValue "string", "app_name", "Mr White Dev"
+            versionNameSuffix "-dev"
+        }
+        //com.example.mr_white.beta
+        beta {
+            dimension "flavor-type"
+            applicationIdSuffix ".beta"
+            resValue "string", "app_name", "Mr White Beta"
+            versionNameSuffix "-beta"
+        }
+        //com.example.mr_white
+        prod {
+            dimension "flavor-type"
+            resValue "string", "app_name", "Mr White"
+        }
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
