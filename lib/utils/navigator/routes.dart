@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mr_white/pages/blank/blank_page.dart';
+import 'package:mr_white/pages/demo_lazy_load/demo_lazy_load.dart';
 import 'package:mr_white/pages/dummy/dummy_page.dart';
 import 'package:mr_white/pages/home/home_page.dart';
 import 'package:mr_white/utils/navigator/route_list.dart';
@@ -16,6 +17,9 @@ class Routes {
       case RouteList.dummyPage:
         return MaterialPageRoute(
             settings: settings, builder: (_) => const DummyPage());
+      case RouteList.demoLazyLoad:
+        return MaterialPageRoute(
+            settings: settings, builder: (_) => const DemoLazyLoad());
       default:
         return MaterialPageRoute(
             settings: settings, builder: (_) => const BlankPage());

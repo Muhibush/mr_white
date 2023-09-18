@@ -1,10 +1,17 @@
+import 'package:equatable/equatable.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mr_white/utils/mr_white_bloc_observer.dart';
 import 'package:mr_white/utils/navigator/routes.dart';
 import 'generated/l10n.dart';
 
 void main() {
+  /// TODO EquatableConfig.stringify impact
+  EquatableConfig.stringify = kDebugMode;
+  Bloc.observer = const MrWhiteBlocObserver();
   runApp(const MyApp());
 }
 
