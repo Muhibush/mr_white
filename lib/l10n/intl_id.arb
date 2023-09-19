@@ -3,5 +3,8 @@
   "dummyPage": "dummy page",
   "home": "home",
   "youHavePushedTheButtonThisManyTimes": "You have pushed the button this many times:",
-  "increment": "Increment"
+  "increment": "Increment",
+  "demolazyload": "demoLazyLoad",
+  "tryAgain": "try again",
+  "errorFetchingPosts": "error fetching posts"
 }
