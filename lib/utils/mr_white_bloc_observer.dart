@@ -1,4 +1,4 @@
-import 'dart:developer';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 /// TODO set bloc observer based on env or build
@@ -13,12 +13,16 @@ class MrWhiteBlocObserver extends BlocObserver {
     super.onTransition(bloc, transition);
 
     /// TODO check log
-    log(transition as String);
+    if (kDebugMode) {
+      print(transition);
+    }
   }
 
   @override
   void onError(BlocBase<dynamic> bloc, Object error, StackTrace stackTrace) {
-    log(error as String);
+    if (kDebugMode) {
+      print(error);
+    }
     super.onError(bloc, error, stackTrace);
   }
 }

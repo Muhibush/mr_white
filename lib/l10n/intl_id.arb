@@ -4,5 +4,7 @@
   "home": "home",
   "youHavePushedTheButtonThisManyTimes": "You have pushed the button this many times:",
   "increment": "Increment",
-  "demolazyload": "demoLazyLoad"
+  "demolazyload": "demoLazyLoad",
+  "tryAgain": "try again",
+  "errorFetchingPosts": "error fetching posts"
 }

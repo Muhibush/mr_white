@@ -1,5 +1,3 @@
-import 'package:equatable/equatable.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -9,8 +7,6 @@ import 'package:mr_white/utils/navigator/routes.dart';
 import 'generated/l10n.dart';
 
 void main() {
-  /// TODO EquatableConfig.stringify impact
-  EquatableConfig.stringify = kDebugMode;
   Bloc.observer = const MrWhiteBlocObserver();
   runApp(const MyApp());
 }
@@ -22,12 +18,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
 
-        /// TODO //Set the fit size (Find your UI design, look at the dimensions of the device screen and fill it in,unit in dp)
+        /// TODO Set the fit size (Find your UI design, look at the dimensions of the device screen and fill it in,unit in dp)
         /// add mobile and tablet if needed
         designSize: const Size(360, 640),
         builder: (context, child) {
           return MaterialApp(
-            title: S.current.mrWhite,
             theme: ThemeData(
               colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
               useMaterial3: true,
