@@ -2,7 +2,6 @@ part of 'demo_lazy_load_bloc.dart';
 
 enum DemoLazyLoadStatus {
   initial,
-  loading,
   success,
   failure,
 }

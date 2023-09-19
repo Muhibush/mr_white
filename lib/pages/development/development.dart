@@ -18,9 +18,6 @@ class Development extends StatelessWidget {
                   RouteList.demoLazyLoad,
                 );
               },
-
-              /// TODO set Arb
-              /// TODO clean up Arb
               child: Text(S.current.demolazyload))
         ],
       ),
