@@ -1,5 +1,5 @@
 class RouteList {
-  static const String home = '/';
-  static const String development = '/development';
-  static const String demoLazyLoad = '/demo-lazy-load';
+  static const String homePage = '/';
+  static const String developmentPage = '/development-page';
+  static const String demoLazyLoadPage = '/demo-lazy-load-page';
 }

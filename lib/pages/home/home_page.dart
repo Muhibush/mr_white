@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 Navigator.pushNamed(
                   context,
-                  RouteList.development,
+                  RouteList.developmentPage,
                 );
               },
               child: Text(S.current.dummyPage),

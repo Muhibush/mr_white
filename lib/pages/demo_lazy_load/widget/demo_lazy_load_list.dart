@@ -56,11 +56,7 @@ class _DemoLazyLoadListState extends State<DemoLazyLoadList> {
       itemBuilder: (BuildContext context, int index) {
         return index >= dummyList.length
             ? const DemoLazyLoadBottomLoader()
-            : GestureDetector(
-                onTap: () {
-                  context.read<DemoLazyLoadBloc>().add(DemoLazyLoadFetched());
-                },
-                child: DemoLazyLoadItem(index: index));
+            : DemoLazyLoadItem(index: index);
       },
       itemCount: itemCount,
       controller: _scrollController,
