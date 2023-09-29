@@ -10,7 +10,7 @@ class DemoApiClientRepository {
   }
 
   Future<GetUsersResponse> getUsers({required int page}) async {
-    var response = await _dio.get('https://reqres.in/api/users?page=$page');
+    var response = await _dio.get('https://reqres.in/api/users?page=$page&per_page=10');
     return GetUsersResponse.fromJson(response.data);
   }
 }

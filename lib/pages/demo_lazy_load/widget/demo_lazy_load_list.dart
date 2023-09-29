@@ -53,13 +53,13 @@ class _DemoLazyLoadListState extends State<DemoLazyLoadList> {
     var itemCount = hasReachedMax ? dummyList.length : dummyList.length + 1;
 
     return ListView.builder(
+      controller: _scrollController,
+      itemCount: itemCount,
       itemBuilder: (BuildContext context, int index) {
         return index >= dummyList.length
             ? const DemoLazyLoadBottomLoader()
             : DemoLazyLoadItem(index: index);
       },
-      itemCount: itemCount,
-      controller: _scrollController,
     );
   }
 }
