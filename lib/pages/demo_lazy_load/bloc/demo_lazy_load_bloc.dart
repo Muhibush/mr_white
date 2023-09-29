@@ -32,14 +32,17 @@ class DemoLazyLoadBloc extends Bloc<DemoLazyLoadEvent, DemoLazyLoadState> {
       if (dummyList.isEmpty) {
         return emit(state.copyWith(hasReachedMax: true));
       }
+
+      _dummyPage++;
       emit(state.copyWith(
         status: DemoLazyLoadStatus.success,
         dummyList: List.of(state.dummyList)..addAll(dummyList),
         hasReachedMax: false,
       ));
-      _dummyPage++;
     } catch (_) {
-      emit(state.copyWith(status: DemoLazyLoadStatus.failure));
+      emit(state.copyWith(
+        status: DemoLazyLoadStatus.failure,
+      ));
     }
   }
 }

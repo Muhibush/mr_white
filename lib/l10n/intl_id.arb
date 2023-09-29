@@ -1,10 +1,11 @@
 {
   "mrWhite": "Mr White",
-  "dummyPage": "dummy page",
+  "developmentPage": "Development Page",
   "home": "home",
   "youHavePushedTheButtonThisManyTimes": "You have pushed the button this many times:",
   "increment": "Increment",
-  "demolazyload": "demoLazyLoad",
+  "demoLazyLoadPage": "Demo Lazy Load Page",
+  "demoApiClientPage": "Demo Api Client Page",
   "tryAgain": "try again",
   "errorFetchingPosts": "error fetching posts"
 }

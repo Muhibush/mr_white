@@ -14,3 +14,27 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+Feature
+- App flavor (build dev, beta, prod)
+  - name
+  - launcher icon
+  - package
+- routing
+- localization
+- screen utils
+- bloc state management
+  - unit test
+- api client use open mock api
+
+TODO
+- switch environment
+- project documentation
+- api client
+  - auto refresh
+  - error handling
+  - env
+- CI/CD
+
+Optional
+- widget test
