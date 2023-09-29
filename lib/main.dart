@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mr_white/utils/api_provider/api_provider.dart';
 import 'package:mr_white/utils/mr_white_bloc_observer.dart';
 import 'package:mr_white/utils/navigator/routes.dart';
 import 'generated/l10n.dart';
 
-void main() {
+void main() async {
   Bloc.observer = const MrWhiteBlocObserver();
+
+  await ApiProvider.init();
   runApp(const MyApp());
 }
 

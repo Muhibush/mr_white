@@ -8,7 +8,7 @@ class DevelopmentPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text(S.current.developmentPage)),
       body: ListView(
         children: [
           TextButton(
@@ -18,7 +18,15 @@ class DevelopmentPage extends StatelessWidget {
                   RouteList.demoLazyLoadPage,
                 );
               },
-              child: Text(S.current.demolazyload))
+              child: Text(S.current.demoLazyLoadPage)),
+          TextButton(
+              onPressed: () {
+                Navigator.pushNamed(
+                  context,
+                  RouteList.demoApiClientPage,
+                );
+              },
+              child: Text(S.current.demoApiClientPage)),
         ],
       ),
     );

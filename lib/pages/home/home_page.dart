@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                   RouteList.developmentPage,
                 );
               },
-              child: Text(S.current.dummyPage),
+              child: Text(S.current.developmentPage),
             )
           ],
         ),
