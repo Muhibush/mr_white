@@ -5,11 +5,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mr_white/utils/api_provider/api_provider.dart';
 import 'package:mr_white/utils/mr_white_bloc_observer.dart';
 import 'package:mr_white/utils/navigator/routes.dart';
+import 'package:mr_white/utils/shared_preference_mr_white.dart';
 import 'generated/l10n.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   Bloc.observer = const MrWhiteBlocObserver();
 
+  await SharedPreferenceMrWhite.init();
   await ApiProvider.init();
   runApp(const MyApp());
 }

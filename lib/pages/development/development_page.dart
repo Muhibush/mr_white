@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mr_white/generated/l10n.dart';
+import 'package:mr_white/pages/development/widget/switch_environment/switch_environment_widget.dart';
 import 'package:mr_white/utils/navigator/route_list.dart';
 
 class DevelopmentPage extends StatelessWidget {
@@ -11,6 +12,7 @@ class DevelopmentPage extends StatelessWidget {
       appBar: AppBar(title: Text(S.current.developmentPage)),
       body: ListView(
         children: [
+          const SwitchEnvironmentWidget(),
           TextButton(
               onPressed: () {
                 Navigator.pushNamed(

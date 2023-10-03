@@ -1,11 +1,13 @@
 {
   "mrWhite": "Mr White",
   "developmentPage": "Development Page",
-  "home": "home",
+  "home": "Home",
   "youHavePushedTheButtonThisManyTimes": "You have pushed the button this many times:",
   "increment": "Increment",
   "demoLazyLoadPage": "Demo Lazy Load Page",
   "demoApiClientPage": "Demo Api Client Page",
-  "tryAgain": "try again",
-  "errorFetchingPosts": "error fetching posts"
+  "tryAgain": "Try Again",
+  "errorFetchingPosts": "Error Fetching Posts",
+  "selectEnvironment": "Select Environment",
+  "environmentEnvironment": "Environment: {environment}"
 }
